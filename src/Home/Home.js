@@ -54,7 +54,9 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
+            <h3 className="text-info fs-1 fw-bolder mt-5">SERVICES</h3>
             <div className='card-container m-5 w-100'>
+
                 {
                     services.map(service => <Service key={service.id}
                         service={service}

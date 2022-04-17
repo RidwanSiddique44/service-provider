@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Service = (service) => {
     console.log(service)
-    const { name, image, description } = service.service;
+    const { name, image, description, price } = service.service;
     const navigate = useNavigate();
 
     const navigateCheckOut = () => {
@@ -19,7 +19,10 @@ const Service = (service) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Button onClick={() => navigateCheckOut()} variant="primary">Check-Out</Button>
+                    <Card.Text >
+                        <span className=" fs-3 fw-bolder">Fee:</span> <sapn className="fs-1">{price}</sapn>
+                    </Card.Text>
+                    <Button onClick={() => navigateCheckOut()} variant="info text-light fw-bolder">Check-Out</Button>
                 </Card.Body>
             </Card>
         </div>
