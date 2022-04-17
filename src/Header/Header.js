@@ -13,14 +13,14 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="secondary" sticky='top' variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="light-gray" sticky='top' variant="light border">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         NavBar
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ms-auto me-auto">
+                        <Nav className="ms-auto me-auto fw-bolder">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
@@ -29,9 +29,9 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <Button variant="outline-primary p-0"><Nav.Link className='text-white text-decoration-none' onClick={handleLogOut}>Log-out</Nav.Link></Button>
+                                    <Button variant="outline-info p-0"><Nav.Link className='text-white text-decoration-none fw-bolder' onClick={handleLogOut}>Log-out</Nav.Link></Button>
                                     :
-                                    <Button variant="outline-primary"><Nav.Link as={Link} to="login">
+                                    <Button variant="outline-info p-0"><Nav.Link className='fw-bolder' as={Link} to="login">
                                         Log-in
                                     </Nav.Link></Button>
                             }
