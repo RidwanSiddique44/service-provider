@@ -1,0 +1,10 @@
+.banner {
+    height: 500px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
+
+}
