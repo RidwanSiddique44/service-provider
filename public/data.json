@@ -1,0 +1,23 @@
+[
+    {
+        "id": "623ee5000095a009d8b3ca01",
+        "image": "pic11.png",
+        "review": "With more screen real estate, improved durability, and faster charging, the Apple Watch Series 7 retains its crown as the best smartwatch on the market.",
+        "rating": "5.00",
+        "name": "Jhon Benny"
+    },
+    {
+        "id": "623ee500e276092b70e17834",
+        "image": "pic22.png",
+        "review": "The Apple Watch SE drops the always-on display and a couple of advanced health sensors from the Series 6, but otherwise delivers the same winning app, fitness, and safety features for $120 less.",
+        "rating": "5.00",
+        "name": "Criss Nail"
+    },
+    {
+        "id": "623ee500ec19598a6f2088f2",
+        "image": "pic33.png",
+        "review": "Ideal for small wrists, the Apple smartwatch has a fashionable, jewelry-inspired design and many useful health-tracking features for a reasonable price.",
+        "rating": "5.00",
+        "name": "Lady Kaka"
+    }
+]
