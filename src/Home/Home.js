@@ -12,9 +12,7 @@ const Home = () => {
                 .then(res => res.json())
                 .then(data => setServices(data))
         }, []);
-    const navigateCheckOut = event => {
-        Navigate('/checkout');
-    }
+
     return (
         <div >
             <div >
@@ -60,7 +58,6 @@ const Home = () => {
                 {
                     services.map(service => <Service key={service.id}
                         service={service}
-                        navigateCheckOut={navigateCheckOut}
                     ></Service>
                     )
                 }

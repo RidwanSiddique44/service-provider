@@ -2,22 +2,22 @@
     {
         "id": "623ee5000095a009d8b3ca01",
         "image": "./pic11.png",
-        "description": "With more screen real estate, improved durability, and faster charging, the Apple Watch Series 7 retains its crown as the best smartwatch on the market.",
-        "price": "5.00",
-        "name": "Jhon Benny"
+        "description": "The best soluton of course is combining diet improvements together with workout plan and regular gym visits. It should take into account your individual particularities.",
+        "price": "$300",
+        "name": "Individual Routine Program"
     },
     {
         "id": "623ee500e276092b70e17834",
         "image": "./pic22.png",
-        "description": "The Apple Watch SE drops the always-on display and a couple of advanced health sensors from the Series 6, but otherwise delivers the same winning app, fitness, and safety features for $120 less.",
-        "price": "5.00",
-        "name": "Criss Nail"
+        "description": "Life is motion and you can feel your every muscle when you are working out. Of course you have to know which exercises are useful for which groups of muscles. And that’s it",
+        "price": "$700",
+        "name": "Personalized Exercise Program"
     },
     {
         "id": "623ee500ec19598a6f2088f2",
         "image": "./pic33.png",
-        "description": "Ideal for small wrists, the Apple smartwatch has a fashionable, jewelry-inspired design and many useful health-tracking features for a reasonable price.",
-        "price": "5.00",
-        "name": "Lady Kaka"
+        "description": "Sometimes to change diet habits is sufficient for changing the whole lifestyle. Food for body can heal the whole personality by causing a behavioral change.",
+        "price": "$500",
+        "name": "Personalized Nutrition Plan"
     }
 ]
