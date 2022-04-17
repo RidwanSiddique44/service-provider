@@ -50,6 +50,7 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
+            document.getElementById('error-message').innerText = '';
         }
         else {
             document.getElementById('error-message').innerText = "Please,Enter your email !!";
