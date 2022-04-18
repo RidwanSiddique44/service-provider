@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Loading from '../../Loading/Loading';
+import Loading from '../../SharedPages/Loading/Loading';
 import auth from '../../firebase.init';
 
 const Login = () => {

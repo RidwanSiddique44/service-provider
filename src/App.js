@@ -1,15 +1,16 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Header/Header';
+import Header from './SharedPages/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Home/Home';
-import About from './About/About';
-import Blog from './Blogs/Blog';
-import Checkout from './Checkout/Checkout';
-import NotFound from './NotFound/NotFound';
+import About from './MainPages/About/About';
+import Blog from './MainPages/Blogs/Blog';
+import Checkout from './MainPages/Checkout/Checkout';
+import NotFound from './MainPages/NotFound/NotFound';
 import Login from './SignInPages/Login/Login';
 import Signup from './SignInPages/Signup/Signup';
 import RequireAuth from './SignInPages/RequireAuth/RequireAuth';
+import Footer from './SharedPages/Footer/Footer';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
+
     </div >
   );
 }
