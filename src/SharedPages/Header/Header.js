@@ -14,7 +14,7 @@ const Header = () => {
     }
     return (
         <div className='top-nav'>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light border">
+            <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark border">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <h4 className='fw-bolder'><span className='text-info'>Health</span>Coach</h4>

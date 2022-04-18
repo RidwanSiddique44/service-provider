@@ -9,13 +9,40 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+.extra-container {
+    border: 2px solid rgb(95, 209, 253);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.part-2 {
+    background-image: linear-gradient(rgb(14, 13, 13), rgb(110, 105, 106));
+}
+
+.common {
+    color: rgb(228, 95, 139);
+}
+
+/* ----------------mobile responsive media query--------------- */
+
+@media only screen and (max-width: 700px) {
     .card-container {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 0;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .extra-container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+
     }
 }

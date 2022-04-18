@@ -6,7 +6,7 @@ const About = () => {
         <div className='about-container'>
             <h3 className="text-info fw-bolder ps-4 mt-5">KNOW ABOUT ME</h3>
             <hr />
-            <h5 className='ps-3 fw-bolder'>I am Ridwan Siddique</h5>
+            <h5 className='ps-3 fw-bolder'>Hi,I am Ridwan Siddique</h5>
             <div className='img-container mt-5 pe-2'>
                 <img src={require('../../image/my-bg2.png')} />
             </div>

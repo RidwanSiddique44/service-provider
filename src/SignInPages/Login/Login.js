@@ -4,6 +4,9 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../SharedPages/Loading/Loading';
 import auth from '../../firebase.init';
+import GoogleLogIn from '../MediaLogIn/GoogleLogIn';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -50,16 +53,16 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            document.getElementById('error-message').innerText = '';
+            toast('Sending...');
         }
         else {
-            document.getElementById('error-message').innerText = "Please,Enter your email !!";
+            toast('Please, Enter your email address !!');
         }
     }
 
     return (
         <div className='container w-50 mx-auto'>
-
+            {/* ---------------log in form----------------- */}
             <h2 className='text-info text-center mt-5'>Please LogIn</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -76,7 +79,11 @@ const Login = () => {
             <p>New to the page? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please SignUp</Link> </p>
             <p>Forgotten Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
             <div id='error-message' className='text-danger'></div>
+            {/*--------- google log in component--------- */}
+            <GoogleLogIn></GoogleLogIn>
+            <ToastContainer />
         </div>
+
     );
 };
 

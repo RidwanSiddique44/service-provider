@@ -4,6 +4,7 @@ import Loading from '../../SharedPages/Loading/Loading';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Signup.css';
+import GoogleLogIn from '../MediaLogIn/GoogleLogIn';
 
 const Signup = () => {
     const [agree, setAgree] = useState(false);
@@ -48,6 +49,7 @@ const Signup = () => {
                     value="SignUp" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please LogIn</Link> </p>
+            <GoogleLogIn></GoogleLogIn>
 
         </div>
     );

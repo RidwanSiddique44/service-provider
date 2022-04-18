@@ -15,8 +15,9 @@ import Footer from './SharedPages/Footer/Footer';
 function App() {
   return (
     <div className="App">
-
+      {/* --------header component------------- */}
       <Header></Header>
+      {/*----------- All routes --------------- */}
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
@@ -31,8 +32,8 @@ function App() {
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      {/*---------- footer component -------------- */}
       <Footer></Footer>
-
     </div >
   );
 }
